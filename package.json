@@ -21,6 +21,8 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
+    "@astrojs/ts-plugin": "^1.5.2",
+    "@catppuccin/palette": "^1.1.0",
     "@catppuccin/tailwindcss": "^0.1.6",
     "@types/bun": "^1.0.6",
     "@vite-pwa/astro": "^0.3.0"
