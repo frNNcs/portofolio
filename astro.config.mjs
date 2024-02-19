@@ -7,5 +7,5 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   integrations: [svelte(), tailwind()],
   site: "https://frnncs.github.io/portofolio/",
-  base: '/portofolio',
+  base: '/',
 });
