@@ -19,7 +19,7 @@
 	<NavUl>
 		<NavLi href="/" active={true}>Home</NavLi>
 		<NavLi class="cursor-pointer" href="{null}">About</NavLi>
-		<NavLi class="cursor-pointer" href={null}>Blog</NavLi>
+		<NavLi class="cursor-pointer" href="https://medium.com/@frnn">Blog</NavLi>
 		<NavLi class="cursor-pointer" href={null}>Contact</NavLi>
 	</NavUl>
 </Navbar>
