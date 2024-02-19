@@ -16,9 +16,9 @@
 	</NavBrand>
 	<NavHamburger />
 	<NavUl>
-		<NavLi class="text-ctp-text" href="/">Home</NavLi>
-		<NavLi class="text-ctp-text" href="/about">About</NavLi>
-		<NavLi class="text-ctp-text" href="/blog">Blog</NavLi>
-		<NavLi class="text-ctp-text" href="/contact">Contact</NavLi>
+		<NavLi class="text-ctp-text cursor-pointer" href="{null}">Home</NavLi>
+		<NavLi class="text-ctp-text cursor-pointer" href="{null}">About</NavLi>
+		<NavLi class="text-ctp-text cursor-pointer" href="{null}">Blog</NavLi>
+		<NavLi class="text-ctp-text cursor-pointer" href="{null}">Contact</NavLi>
 	</NavUl>
 </Navbar>
