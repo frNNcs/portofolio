@@ -1,3 +1,5 @@
+import { colors } from '@catppuccin/palette'
+
 /** @type {import('tailwindcss').Config} */
 export default {
 	content: [
@@ -7,13 +9,13 @@ export default {
 
 	plugins: [
 		require('flowbite/plugin'),
-		require("@catppuccin/tailwindcss")({
-			prefix: "ctp",
-			defaultFlavour: "mocha",
-		  }),
+		require('@catppuccin/tailwindcss')({
+			prefix: 'mocha',
+			defaultFlavour: 'mocha'
+		})
 	],
 
-	darkMode: 'class',
+	darkMode: 'media',
 
 	theme: {
 		extend: {
@@ -21,12 +23,19 @@ export default {
 				blinkingText: {
 					'0%': { opacity: 1 },
 					'50%': { opacity: 0 },
-					'100%': { opacity: 1 },
+					'100%': { opacity: 1 }
 				}
 			},
 			animation: {
-				blinkingText: 'blinkingText 1s infinite',
+				blinkingText: 'blinkingText 1s infinite'
 			}
 		},
-	},
+		colors: {
+			...colors,
+			latte: {
+				base: '#eff1f5',
+				text: '#4c4f69'
+			}
+		}
+	}
 }
