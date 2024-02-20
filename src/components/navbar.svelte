@@ -19,6 +19,6 @@
 	<NavUl>
 		<NavLi href="/" active={true}>Home</NavLi>
 		<NavLi class="cursor-pointer" href="https://medium.com/@frnn">Blog</NavLi>
-		<NavLi class="cursor-pointer" href={null}>Contact</NavLi>
+		<NavLi class="cursor-pointer" href="mailto:frnncs+frnndev@gmail.com">Contact</NavLi>
 	</NavUl>
 </Navbar>
