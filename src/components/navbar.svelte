@@ -1,8 +1,11 @@
 <script>
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte';
+	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger } from 'flowbite-svelte'
 </script>
 
 <Navbar
+	let:hidden
+	let:toggle
+	fluid={false}
 	class="
 	bg-latte-base text-latte-text
 	dark:bg-mocha-base dark:text-mocha-text"
@@ -15,10 +18,18 @@
 			<span class="font-thin">dev</span>
 		</span>
 	</NavBrand>
-	<NavHamburger />
-	<NavUl>
-		<NavLi href="/" active={true}>Home</NavLi>
-		<NavLi class="cursor-pointer" href="https://medium.com/@frnn">Blog</NavLi>
-		<NavLi class="cursor-pointer" href="mailto:frnncs+frnndev@gmail.com">Contact</NavLi>
+	<NavHamburger on:click={toggle} />
+	<NavUl {hidden}>
+		<NavLi href="/">Home</NavLi>
+		<NavLi href="https://medium.com/@frnn">Blog</NavLi>
+		<NavLi href="mailto:frnncs+frnndev@gmail.com">
+			<img src="/mail.svg" alt="mail icon" class="w-4 h-4 inline" />
+			Mail
+		</NavLi>
+		<NavLi href="github.com/frNNcs">
+			<img src="/gh.svg" alt="github icon" class="w-4 h-4 inline" />
+			<span class="align-middle pl-1">Github</span>
+		</NavLi>
+		<NavLi href="/blogs/medium-post" class="italic text-sm">>First post</NavLi>
 	</NavUl>
 </Navbar>

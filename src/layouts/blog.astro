@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/base.astro'
+import type { MarkdownLayoutProps } from 'astro'
+
+type Props = MarkdownLayoutProps<{
+	title: string
+	author: string
+	description: string
+	link: string
+	site: string
+}>
+const { frontmatter } = Astro.props
+---
+
+<Layout>
+	<main class="p-4 m-auto w-2/3">
+		<h1 class="text-4xl">{frontmatter.title}</h1>
+		<p class="pt-5 justify-self-end">
+			{frontmatter.author} at
+			<a class="pl-1 text-xl italic" href={frontmatter.link}>
+				{frontmatter.site}
+			</a>
+		</p>
+		<div class="pb-14">
+			<slot />
+		</div>
+	</main>
+</Layout>
+
+<style is:global>
+	h2 {
+		font-size: xx-large;
+		padding-top: 20px;
+	}
+	pre {
+		padding: 1rem 1.5rem;
+		margin: auto;
+	}
+</style>

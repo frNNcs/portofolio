@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+	<style>
+		@media (prefers-color-scheme: dark) {
+			#mail-icon {
+				fill: #cdd6f4;
+			}
+		}
+		@media (prefers-color-scheme: light) {
+			#mail-icon {
+				fill: #4c4f69;
+			}
+		}
+	</style>
+	<path
+		id="mail-icon"
+		d="M14,3H2C1.447,3,1,3.447,1,4v8c0,0.553,0.447,1,1,1h12c0.553,0,1-0.447,1-1V4  C15,3.447,14.553,3,14,3z M13.322,4L8,8L2.602,4H13.322z M14,12H2V4.655L8,9l6-4.444V12z"
+	/>
+</svg>
