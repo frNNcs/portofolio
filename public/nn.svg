@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 611 470">
-	>
 	<style>
-		/* add dark and light mode */
 		@media (prefers-color-scheme: dark) {
 			#nn-icon {
 				fill: #cdd6f4;
