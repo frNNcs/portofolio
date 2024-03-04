@@ -13,7 +13,7 @@ const { frontmatter } = Astro.props
 ---
 
 <Layout>
-	<main class="p-4 m-auto w-2/3">
+	<main class="p-4  m-3 lg:m-auto lg:w-2/3">
 		<h1 class="text-4xl">{frontmatter.title}</h1>
 		<p class="pt-5 justify-self-end">
 			{frontmatter.author} at
@@ -33,7 +33,10 @@ const { frontmatter } = Astro.props
 		padding-top: 20px;
 	}
 	pre {
-		padding: 1rem 1.5rem;
+		padding: 1rem 1.5rem ;
 		margin: auto;
+	}
+	p {
+		padding-bottom: 1rem;
 	}
 </style>
