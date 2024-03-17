@@ -1,0 +1,22 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: check-toml
+      - id: check-yaml
+      - id: debug-statements
+      - id: end-of-file-fixer
+      - id: mixed-line-ending
+      - id: trailing-whitespace
+      - id: detect-private-key
+
+  - repo: https://github.com/withastro/prettier-plugin-astro
+    rev: v0.13.0
+    hooks:
+      - id: astro-prettier
+        stages: [commit]
+        files: \.(astro|html|css|js)$
+        args: [--write, --ignore-path=.prettierignore]

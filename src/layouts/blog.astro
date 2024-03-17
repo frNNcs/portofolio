@@ -1,5 +1,5 @@
 ---
-import Layout from '../layouts/base.astro'
+import Layout from '@/layouts/base.astro'
 import type { MarkdownLayoutProps } from 'astro'
 
 type Props = MarkdownLayoutProps<{
@@ -13,9 +13,9 @@ const { frontmatter } = Astro.props
 ---
 
 <Layout>
-	<main class="p-4  m-3 lg:m-auto lg:w-2/3">
+	<main class="m-3 p-4 lg:m-auto lg:w-2/3">
 		<h1 class="text-4xl">{frontmatter.title}</h1>
-		<p class="pt-5 justify-self-end">
+		<p class="justify-self-end pt-5">
 			{frontmatter.author} at
 			<a class="pl-1 text-xl italic" href={frontmatter.link}>
 				{frontmatter.site}
@@ -33,7 +33,7 @@ const { frontmatter } = Astro.props
 		padding-top: 20px;
 	}
 	pre {
-		padding: 1rem 1.5rem ;
+		padding: 1rem 1.5rem;
 		margin: auto;
 	}
 	p {
