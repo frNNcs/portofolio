@@ -34,7 +34,8 @@ export default {
 			...colors,
 			latte: {
 				base: '#eff1f5',
-				text: '#4c4f69'
+				text: '#4c4f69',
+				rosewater: '#dc8a78'
 			}
 		}
 	}
